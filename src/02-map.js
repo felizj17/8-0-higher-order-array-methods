@@ -5,7 +5,7 @@
 
   Keep in mind that your functions must still have and use a parameter for accepting all songs.
 */
-const exampleSongData = require("../data/songs");
+const exampleSongData = require('../data/songs')
 // Do not change the line above.
 
 /**
@@ -14,7 +14,7 @@ const exampleSongData = require("../data/songs");
  * @returns {string[]} An array of strings, all of which are song titles.
  */
 function getSongTitles(songs) {
-  const titles = songs.map(song=>{
+  const titles = songs.map(song => {
     return song.title
   })
   return titles
@@ -30,7 +30,7 @@ function getSongTitles(songs) {
  *  //> [ "Berlin Tsukin by Taiyo Ky", "Up by Sebastian Kamae", ... ]
  */
 function getSongDetails(songs) {
-  const titleArtist = songs.map(song=>{
+  const titleArtist = songs.map(song => {
     return `${song.title} by ${song.artist}`
   })
   return titleArtist
@@ -46,8 +46,8 @@ function getSongDetails(songs) {
  *  //> [ { "Berlin Tsukin": "Taiyo Ky" }, { Up: "Sebastian Kamae" }, ... ]
  */
 function getTitleAndArtist(songs) {
-  const titleArtist = songs.map(song=>{
-    return {[song.title]:song.artist}
+  const titleArtist = songs.map(song => {
+    return { [song.title]: song.artist }
   })
   return titleArtist
 }
@@ -56,4 +56,4 @@ module.exports = {
   getSongTitles,
   getSongDetails,
   getTitleAndArtist,
-};
+}

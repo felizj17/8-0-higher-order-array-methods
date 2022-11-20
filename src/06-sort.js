@@ -27,11 +27,10 @@ function sortByRuntimeAscending(songs) {
  */
 function sortByArtistNameDescending(songs) {
   return songs.sort((a, b) => {
-    const artistA = a.artist.toUpperCase();
-    const artistB = b.artist.toUpperCase();
-    return artistA<artistB?1:artistA>artistB?-1:0
-})
-
+    const artistA = a.artist.toUpperCase()
+    const artistB = b.artist.toUpperCase()
+    return artistA < artistB ? 1 : artistA > artistB ? -1 : 0
+  })
 }
 
 /**
@@ -43,10 +42,10 @@ function sortByArtistNameDescending(songs) {
  * @returns {Object[]}
  */
 function sortBySongTitleAscending(songs) {
-  return songs.sort((a,b)=>{
+  return songs.sort((a, b) => {
     const titleA = a.title.toLowerCase()
     const titleB = b.title.toLowerCase()
-    return titleA>titleB?1:titleA<titleB?-1:0
+    return titleA > titleB ? 1 : titleA < titleB ? -1 : 0
   })
 }
 

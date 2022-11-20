@@ -5,7 +5,7 @@
 
   Keep in mind that your functions must still have and use a parameter for accepting all songs.
 */
-const exampleSongData = require("../data/songs");
+const exampleSongData = require('../data/songs')
 // Do not change the line above.
 
 /**
@@ -14,10 +14,7 @@ const exampleSongData = require("../data/songs");
  * @returns {Object[]} An array of objects.
  */
 function getSongsBySaib(songs) {
-  return songs.filter(song=>
-    song.artist == 'Saib'
-  )
-
+  return songs.filter(song => song.artist == 'Saib')
 }
 
 /**
@@ -26,8 +23,7 @@ function getSongsBySaib(songs) {
  * @returns {Object[]} An array of objects.
  */
 function getSongsOverThreeMinutes(songs) {
- return songs.filter(song=>song.runtimeInSeconds>180)
-
+  return songs.filter(song => song.runtimeInSeconds > 180)
 }
 
 /**
@@ -36,11 +32,11 @@ function getSongsOverThreeMinutes(songs) {
  * @returns {Object[]} An array of objects.
  */
 function getTitleTracks(songs) {
-  return songs.filter(song=>song.album === song.title)
+  return songs.filter(song => song.album === song.title)
 }
 
 module.exports = {
   getSongsBySaib,
   getSongsOverThreeMinutes,
   getTitleTracks,
-};
+}

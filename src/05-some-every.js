@@ -5,7 +5,7 @@
 
   Keep in mind that your functions must still have and use a parameter for accepting all songs.
 */
-const exampleSongData = require("../data/songs");
+const exampleSongData = require('../data/songs')
 // Do not change the line above.
 
 /**
@@ -14,7 +14,7 @@ const exampleSongData = require("../data/songs");
  * @returns {boolean}
  */
 function allSongsAreOverTwoMinutes(songs) {
-  return songs.every(song=>song.runtimeInSeconds>120)
+  return songs.every(song => song.runtimeInSeconds > 120)
 }
 
 /**
@@ -23,7 +23,7 @@ function allSongsAreOverTwoMinutes(songs) {
  * @returns {boolean}
  */
 function anySongIsOverFourMinutes(songs) {
-  return songs.some(song=>song.runtimeInSeconds>240)
+  return songs.some(song => song.runtimeInSeconds > 240)
 }
 
 /**
@@ -32,11 +32,11 @@ function anySongIsOverFourMinutes(songs) {
  * @returns {boolean}
  */
 function anySongIsByPeanut(songs) {
-  return songs.some(song=>song.artist === 'Peanut')
+  return songs.some(song => song.artist === 'Peanut')
 }
 
 module.exports = {
   allSongsAreOverTwoMinutes,
   anySongIsOverFourMinutes,
   anySongIsByPeanut,
-};
+}
